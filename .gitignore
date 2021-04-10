@@ -1,5 +1,5 @@
 *.iml
-.gradle
+../../AN02-onl_Planner-master/AN02-onl_Planner-master/.gradle
 /local.properties
 /.idea/caches
 /.idea/libraries
