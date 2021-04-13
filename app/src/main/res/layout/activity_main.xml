@@ -8,12 +8,6 @@
     tools:openDrawer="start">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/start"
             android:layout_width="match_parent"
@@ -29,7 +23,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="90dp"
                 android:foregroundGravity="center"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/buttonStart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +32,7 @@
                 app:srcCompat="@drawable/main_img_man" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="76dp"
@@ -49,5 +43,5 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+
 </androidx.drawerlayout.widget.DrawerLayout>
