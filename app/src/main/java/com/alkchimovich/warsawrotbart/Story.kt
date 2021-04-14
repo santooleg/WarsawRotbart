@@ -2,6 +2,7 @@ package com.alkchimovich.warsawrotbart
 
 import android.annotation.SuppressLint
 import android.view.View
+import android.widget.ScrollView
 import kotlinx.android.synthetic.main.activity_game.*
 
 class Story(private val gs: GameActivity) {
@@ -9,6 +10,8 @@ class Story(private val gs: GameActivity) {
     var nextPosition1 = ""
     var nextPosition2 = ""
     var nextPosition3 = ""
+
+
 
     fun selectPosition(position: String) {
 
@@ -24,7 +27,7 @@ class Story(private val gs: GameActivity) {
     @SuppressLint("SetTextI18n")
     fun startingPoint() {
         gs.textTitle.setText("Берлин. 1941...")
-        gs.imgGame.setImageResource(R.drawable.s1)
+        gs.imgGame.setImageResource(R.drawable.room)
         gs.txtGame.setText(
             "\"Франц: Как же я устал от всего этого безумия.\" \n" +
                     "\"Франц Живешь в постоянном напряжении.\" \n" +
@@ -59,7 +62,7 @@ class Story(private val gs: GameActivity) {
     fun second() {
 
         gs.textTitle.setText("Берлин. 1941...")
-        gs.imgGame.setImageResource(R.drawable.night_berlin_home)
+        gs.imgGame.setImageResource(R.drawable.s2v2)
         gs.txtGame.setText(
             "\"Спустя пару минут Франц вышел из подъезда своего дома.\",\n" +
                     "\"На улице было прохладно, но виски, выпитый ранее, приятно согревал изнутри.\",\n" +
@@ -92,7 +95,7 @@ class Story(private val gs: GameActivity) {
     @SuppressLint("SetTextI18n")
     fun three() {
         gs.textTitle.setText("Берлин. 1941...")
-        gs.imgGame.setImageResource(R.drawable.room_arthur)
+        gs.imgGame.setImageResource(R.drawable.s3v3)
         gs.txtGame.setText(
             "\"Спустя пару минут Франц вышел из подъезда своего дома.\",\n" +
                     "\"На улице было прохладно, но виски, выпитый ранее, приятно согревал изнутри.\",\n" +
