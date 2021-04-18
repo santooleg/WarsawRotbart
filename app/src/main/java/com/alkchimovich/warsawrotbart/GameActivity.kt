@@ -29,10 +29,12 @@ class GameActivity : AppCompatActivity() {
         btnGame2.setOnClickListener {
 
             story.selectPosition(story.nextPosition2)
+            findViewById<ScrollView>(R.id.scrollView).scrollToDescendant(textTitle)
         }
         btnGame3.setOnClickListener {
 
             story.selectPosition(story.nextPosition3)
+            findViewById<ScrollView>(R.id.scrollView).scrollToDescendant(textTitle)
         }
 
         story.startingPoint()
