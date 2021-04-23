@@ -10,8 +10,6 @@ class Story(private val gs: GameActivity) {
     var nextPosition2 = ""
     var nextPosition3 = ""
 
-
-
     fun selectPosition(position: String) {
 
         when (position) {
@@ -29,6 +27,12 @@ class Story(private val gs: GameActivity) {
             "twelve" -> twelve()
             "thirteen" -> thirteen()
             "fourteen" -> fourteen()
+            "fifteen" -> fifteen()
+            "sixteen" -> sixteen()
+            "seventeen" -> seventeen()
+            "eighteen" -> eighteen()
+            "nineteen" -> nineteen()
+            "twenty" -> twenty()
 
         }
     }
@@ -38,7 +42,6 @@ class Story(private val gs: GameActivity) {
         gs.btnGame2.visibility = View.VISIBLE
         gs.btnGame3.visibility = View.VISIBLE
     }
-
 
     @SuppressLint("SetTextI18n")
     fun startingPoint() {
@@ -280,5 +283,111 @@ class Story(private val gs: GameActivity) {
         gs.btnGame3.visibility = View.INVISIBLE
 
     }
-}
 
+    @SuppressLint("SetTextI18n")
+    fun fifteen() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Остановится за два дома" //16
+        gs.btnGame2.text = "Подъехать к дому" //17
+
+        nextPosition1 = "sixteen"
+        nextPosition2 = "seventeen"
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun sixteen() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Пойти" //18
+        gs.btnGame2.text = "Остаться" //19
+
+        nextPosition1 = "eighteen"
+        nextPosition2 = "nineteen"
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun seventeen() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Подождать" //20
+        gs.btnGame2.text = "Пойти" //21
+
+        nextPosition1 = "twenty"
+        nextPosition2 = "twentyone"
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun eighteen() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Подождать" //20
+        gs.btnGame2.text = "Пойти" //21
+
+        nextPosition1 = "twenty"
+        nextPosition2 = "twentyone"
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun nineteen() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Подождать" //22
+        gs.btnGame2.text = "Вернуться домой" //23
+
+        nextPosition1 = "twentytwo"
+        nextPosition2 = "twentyfree"
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun twenty() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.street_berlin_one)
+        gs.txtGame.setText(R.string.story_fourteen)
+
+        showAllButton()
+
+        gs.btnGame1.text = "Дальше" //21
+
+        nextPosition1 = "twentyone"
+
+        gs.btnGame2.visibility = View.INVISIBLE
+        gs.btnGame3.visibility = View.INVISIBLE
+
+    }
+}
