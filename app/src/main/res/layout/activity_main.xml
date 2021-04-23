@@ -39,6 +39,7 @@
                 android:layout_marginBottom="76dp"
                 android:background="@drawable/button_start"
                 android:foregroundGravity="center"
+                android:alpha=".5"
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
                 android:shadowDy="0"
