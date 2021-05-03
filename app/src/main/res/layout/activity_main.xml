@@ -12,7 +12,7 @@
             android:id="@+id/start"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/main_background">
+            android:background="@drawable/main_background_new">
 
             <ImageView
                 android:id="@+id/imgStart"
@@ -29,28 +29,23 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/main_img_man" />
+                app:srcCompat="@drawable/main_img_man_new" />
 
             <Button
                 android:id="@+id/buttonStart"
-                style="@android:style/Widget.ImageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="76dp"
+                android:layout_marginBottom="75dp"
                 android:background="@drawable/button_start"
+                android:fontFamily="serif"
                 android:foregroundGravity="center"
-                android:alpha=".5"
-                android:shadowColor="#A8A8A8"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="5"
                 android:text="@string/button_start"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
