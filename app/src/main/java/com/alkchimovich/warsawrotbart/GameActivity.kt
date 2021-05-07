@@ -16,8 +16,8 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 
 class GameActivity : AppCompatActivity() {
 
-    @SuppressLint("ResourceType")
-    @RequiresApi(Build.VERSION_CODES.Q)
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -27,17 +27,17 @@ class GameActivity : AppCompatActivity() {
         btnGame1.setOnClickListener {
 
             story.selectPosition(story.nextPosition1)
-            findViewById<ScrollView>(R.id.scrollView).scrollToDescendant(textTitle)
+            findViewById<ScrollView>(R.id.scrollView).scrollTo(0,0)
         }
         btnGame2.setOnClickListener {
 
             story.selectPosition(story.nextPosition2)
-            findViewById<ScrollView>(R.id.scrollView).scrollToDescendant(textTitle)
+            findViewById<ScrollView>(R.id.scrollView).scrollTo(0,0)
         }
         btnGame3.setOnClickListener {
 
             story.selectPosition(story.nextPosition3)
-            findViewById<ScrollView>(R.id.scrollView).scrollToDescendant(textTitle)
+            findViewById<ScrollView>(R.id.scrollView).scrollTo(0,0)
         }
 
         story.startingPoint()
@@ -46,7 +46,7 @@ class GameActivity : AppCompatActivity() {
     override fun onBackPressed() {
         AlertDialog.Builder(this).apply {
             setTitle("Подтверждение")
-            setMessage("Вы уверены, что хотите вернутся в начало игры?")
+            setMessage("Вернутся в начало игры?")
 
             setPositiveButton("Таки да") { _, _ ->
                finish()

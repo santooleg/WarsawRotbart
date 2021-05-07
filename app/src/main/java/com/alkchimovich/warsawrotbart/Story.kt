@@ -110,7 +110,7 @@ class Story(private val gs: GameActivity) {
     fun info1(){
         showAllButton()
 
-        gs.textTitle.text = "Биография главного героя."
+        gs.textTitle.text = "Франц Вернер"
         gs.imgGame.setImageResource(R.drawable.franc_new)
         gs.txtGame.setText(R.string.franc)
         gs.btnGame1.setText("Вернутся в игру") //startingPoint
@@ -146,7 +146,7 @@ class Story(private val gs: GameActivity) {
     fun info2(){
         showAllButton()
 
-        gs.textTitle.text = "Биография Артура Небе"
+        gs.textTitle.text = "Артур Небе"
         gs.imgGame.setImageResource(R.drawable.artur_nebe)
         gs.txtGame.setText(R.string.arthur)
         gs.btnGame1.setText("Вернутся в игру") //startingPoint
@@ -180,7 +180,7 @@ class Story(private val gs: GameActivity) {
     fun info3(){
         showAllButton()
 
-        gs.textTitle.text = " Отель «Принц Альбрехт»"
+        gs.textTitle.text = "«Принц Альбрехт»"
         gs.imgGame.setImageResource(R.drawable.otel_albrecht)
         gs.txtGame.setText(R.string.albreht)
         gs.btnGame1.setText("Вернутся в игру") //startingPoint
@@ -963,7 +963,7 @@ class Story(private val gs: GameActivity) {
 
         showAllButton()
 
-        gs.btnGame1.text = "Молча сидеть и пить коньяк" //6.2
+        gs.btnGame1.text = "Молча пить коньяк" //6.2
         gs.btnGame2.text = "Поговорить с Лизи" //6.3
 
         nextPosition1 = "sixTwo"
@@ -980,8 +980,8 @@ class Story(private val gs: GameActivity) {
 
         showAllButton()
 
-        gs.btnGame1.text = "Продолжить думать одному" //6.4
-        gs.btnGame2.text = "Позвать девушку составить компанию" //6.5
+        gs.btnGame1.text = "Продолжить одному" //6.4
+        gs.btnGame2.text = "Позвать девушку" //6.5
 
         nextPosition1 = "sixFour"
         nextPosition2 = "sixFive"
@@ -1028,7 +1028,7 @@ class Story(private val gs: GameActivity) {
 
         showAllButton()
 
-        gs.btnGame1.text = "Уединиться в комнате" //6.51
+        gs.btnGame1.text = "Пойти в комнату" //6.51
         gs.btnGame2.text = "Остаться в холле" //6.61
 
         nextPosition1 = "sixFiveOne"
