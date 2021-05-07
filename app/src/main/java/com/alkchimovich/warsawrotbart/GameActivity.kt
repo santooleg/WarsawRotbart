@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ScrollView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
@@ -40,6 +42,23 @@ class GameActivity : AppCompatActivity() {
 
         story.startingPoint()
 
+    }
+    override fun onBackPressed() {
+        AlertDialog.Builder(this).apply {
+            setTitle("Подтверждение")
+            setMessage("Вы уверены, что хотите вернутся в начало игры?")
+
+            setPositiveButton("Таки да") { _, _ ->
+               finish()
+            }
+
+            setNegativeButton("Нет"){_, _ ->
+                // if user press no, then return the activity
+                Toast.makeText(this@GameActivity, "Продолжаем играть",
+                    Toast.LENGTH_SHORT).show()
+            }
+            setCancelable(true)
+        }.create().show()
     }
 
 }
