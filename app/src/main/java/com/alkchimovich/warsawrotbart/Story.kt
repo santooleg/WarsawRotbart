@@ -98,7 +98,7 @@ class Story(private val gs: GameActivity) {
         gs.imgGame.setImageResource(R.drawable.room_new)
         gs.txtGame.setText(R.string.story_one)
         gs.btnGame1.setText("Далее")
-        gs.btnGame2.setText("Информация") //info1
+        gs.btnGame2.setText("Франц Вернер") //info1
         gs.btnGame3.setText("")
 
         gs.btnGame3.setVisibility(View.INVISIBLE)
@@ -133,13 +133,48 @@ class Story(private val gs: GameActivity) {
         gs.textTitle.text = "Берлин. 1941..."
         gs.imgGame.setImageResource(R.drawable.img2)
         gs.txtGame.setText(R.string.story_two)
+
         gs.btnGame1.setText("Далее")
-        gs.btnGame2.setText("Информация") //info2
+        gs.btnGame2.text = "«Принц Альбрехт»" //info3
+        gs.btnGame3.text = ""
+
+        gs.btnGame3.visibility = View.INVISIBLE
+
+        nextPosition1 = "three"
+        nextPosition2 = "info3"
+    }
+    fun info3(){
+        showAllButton()
+
+        gs.textTitle.text = "«Принц Альбрехт»"
+        gs.imgGame.setImageResource(R.drawable.otel_albrecht)
+        gs.txtGame.setText(R.string.albreht)
+        gs.btnGame1.setText("Вернутся в игру") //startingPoint
+        gs.btnGame2.setText("")
+        gs.btnGame3.setText("")
+
+
+        gs.btnGame2.setVisibility(View.INVISIBLE)
+        gs.btnGame3.setVisibility(View.INVISIBLE)
+
+        nextPosition1 = "three"
+
+    }
+
+
+    @SuppressLint("SetTextI18n")
+    fun three() {
+        gs.textTitle.text = "Берлин. 1941..."
+        gs.imgGame.setImageResource(R.drawable.img3)
+        gs.txtGame.setText(R.string.story_free)
+
+        gs.btnGame1.text = "Далее"
+        gs.btnGame2.setText("Артур Небе") //info2
         gs.btnGame3.setText("")
 
         gs.btnGame3.setVisibility(View.INVISIBLE)
 
-        nextPosition1 = "three"
+        nextPosition1 = "four"
         nextPosition2 = "info2"
     }
 
@@ -162,40 +197,6 @@ class Story(private val gs: GameActivity) {
     }
 
     @SuppressLint("SetTextI18n")
-    fun three() {
-        gs.textTitle.text = "Берлин. 1941..."
-        gs.imgGame.setImageResource(R.drawable.img3)
-        gs.txtGame.setText(R.string.story_free)
-        gs.btnGame1.text = "Далее"
-        gs.btnGame2.text = "Информация" //info3
-        gs.btnGame3.text = ""
-
-        gs.btnGame3.visibility = View.INVISIBLE
-
-        nextPosition1 = "four"
-        nextPosition2 = "info3"
-    }
-
-
-    fun info3(){
-        showAllButton()
-
-        gs.textTitle.text = "«Принц Альбрехт»"
-        gs.imgGame.setImageResource(R.drawable.otel_albrecht)
-        gs.txtGame.setText(R.string.albreht)
-        gs.btnGame1.setText("Вернутся в игру") //startingPoint
-        gs.btnGame2.setText("")
-        gs.btnGame3.setText("")
-
-
-        gs.btnGame2.setVisibility(View.INVISIBLE)
-        gs.btnGame3.setVisibility(View.INVISIBLE)
-
-        nextPosition1 = "three"
-
-    }
-
-    @SuppressLint("SetTextI18n")
     fun four() {
         gs.textTitle.text = "Берлин. 1941..."
         gs.imgGame.setImageResource(R.drawable.img4)
@@ -204,7 +205,7 @@ class Story(private val gs: GameActivity) {
         showAllButton()
 
         gs.btnGame1.text = "Поехать домой" //five 5
-        gs.btnGame2.text = "Поехать к Китти" // 6
+        gs.btnGame2.text = "Поехать к «Китти»" // 6
         gs.btnGame3.text = ""
 
         gs.btnGame3.visibility = View.INVISIBLE
@@ -240,7 +241,7 @@ class Story(private val gs: GameActivity) {
         showAllButton()
 
         gs.btnGame1.text = "Дальше" //6.1
-        gs.btnGame2.text = "Информация"   //info4
+        gs.btnGame2.text = "«Китти»"   //info4
         gs.btnGame3.text = ""
 
         gs.btnGame3.visibility = View.INVISIBLE
@@ -252,7 +253,7 @@ class Story(private val gs: GameActivity) {
     fun info4() {
         showAllButton()
 
-        gs.textTitle.text = "Салон Китти."
+        gs.textTitle.text = "Салон «Китти»."
         gs.imgGame.setImageResource(R.drawable.salon_kitty)
         gs.txtGame.setText(R.string.salon_kitty)
         gs.btnGame1.setText("Вернутся в игру") //6
@@ -689,7 +690,7 @@ class Story(private val gs: GameActivity) {
 
         gs.btnGame1.text = "Дальше" //12.1
 
-        nextPosition1 = "twelve_one"
+        nextPosition1 = "twelveOne"
         gs.btnGame2.visibility = View.INVISIBLE
         gs.btnGame3.visibility = View.INVISIBLE
     }

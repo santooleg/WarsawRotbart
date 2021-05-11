@@ -95,19 +95,17 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imgGame" />
 
-                    <Button
+                    <TextView
                         android:id="@+id/btnGame1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="16dp"
-                        android:background="@drawable/button_start"
-                        android:contextClickable="false"
 
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
+                        style="@style/ButtonTextView"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="9dp"
+
                         android:text="Lfkttt"
                         android:textAllCaps="true"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -118,19 +116,17 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/txtGame" />
 
-                    <Button
+                    <TextView
                         android:id="@+id/btnGame2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="24dp"
-                        android:background="@drawable/button_start"
-                        android:contextClickable="false"
-                        android:foregroundGravity="center"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
+
+                        style="@style/ButtonTextView"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="9dp"
+
                         android:text="Lfkttt"
                         android:textAllCaps="true"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -141,19 +137,17 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/btnGame1" />
 
-                    <Button
+                    <TextView
                         android:id="@+id/btnGame3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="24dp"
-                        android:background="@drawable/button_start"
-                        android:contextClickable="false"
-                        android:foregroundGravity="center"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
+
+                        style="@style/ButtonTextView"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="9dp"
+
                         android:text="Lfkttt"
                         android:textAllCaps="true"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -174,12 +168,9 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/button_start"
-                        android:contextClickable="false"
-                        android:foregroundGravity="center"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
+
+
+
                         android:text="Lfkttt"
                         android:textAllCaps="true"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"

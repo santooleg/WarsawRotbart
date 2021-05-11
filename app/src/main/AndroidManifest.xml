@@ -10,9 +10,8 @@
         android:supportsRtl="true"
         android:roundIcon="@mipmap/ic_launcher_new_two_round"
         android:theme="@style/Theme.WarsawRotbart">
-        <activity android:name=".GameActivity">
 
-        </activity>
+
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
@@ -22,6 +21,14 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".GameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+
+            tools:ignore="LockedOrientationActivity">
+
         </activity>
     </application>
 
