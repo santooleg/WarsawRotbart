@@ -1,6 +1,7 @@
 package com.alkchimovich.warsawrotbart
 
 import android.annotation.SuppressLint
+import android.media.MediaPlayer
 import android.view.View
 import kotlinx.android.synthetic.main.activity_game.*
 
@@ -9,6 +10,7 @@ class Story(private val gs: GameActivity) {
     var nextPosition1 = ""
     var nextPosition2 = ""
     var nextPosition3 = ""
+    private var sound: MediaPlayer = MediaPlayer.create(gs, R.raw.hej_sokoly)
 
     fun selectPosition(position: String) {
 
@@ -88,23 +90,27 @@ class Story(private val gs: GameActivity) {
         gs.btnGame1.visibility = View.VISIBLE
         gs.btnGame2.visibility = View.VISIBLE
         gs.btnGame3.visibility = View.VISIBLE
+
     }
+
 
     @SuppressLint("SetTextI18n")
     fun startingPoint() {
         showAllButton()
-
+        sound.start()
+        sound.pause()
         gs.textTitle.text = "Берлин. 1941..."
         gs.imgGame.setImageResource(R.drawable.room_new)
         gs.txtGame.setText(R.string.story_one)
-        gs.btnGame1.setText("Далее")
-        gs.btnGame2.setText("Франц Вернер") //info1
+        gs.btnGame1.text = "Далее"
+        gs.btnGame2.text = "Франц Вернер" //info1
         gs.btnGame3.setText("")
 
         gs.btnGame3.setVisibility(View.INVISIBLE)
 
         nextPosition1 = "second"
         nextPosition2 = "info1"
+
     }
 
     fun info1(){
@@ -1123,6 +1129,7 @@ class Story(private val gs: GameActivity) {
 
     @SuppressLint("SetTextI18n")
     fun thirty() {
+        sound.start()
         gs.textTitle.text = "Берлин. 1941..."
         gs.imgGame.setImageResource(R.drawable.samoliot)
         gs.txtGame.setText(R.string.story_thirty)
@@ -1132,6 +1139,7 @@ class Story(private val gs: GameActivity) {
         gs.btnGame1.text = "Начать с начала" //1
         gs.btnGame2.text = "Информация об игре" //"infoGame"
 
+
         nextPosition1 = "startingPoint"
         nextPosition2 = "infoGame"
 
@@ -1140,15 +1148,17 @@ class Story(private val gs: GameActivity) {
     }
 
     @SuppressLint("SetTextI18n")
-    fun infoGame(){
+    fun infoGame() {
+        sound.start()
         showAllButton()
 
         gs.textTitle.text = "Warsaw Rotbart"
         gs.imgGame.setImageResource(R.drawable.game_info)
         gs.txtGame.setText(R.string.info_game)
-        gs.btnGame1.setText("Начать с начала") //startingPoint
-        gs.btnGame2.setText("")
-        gs.btnGame3.setText("")
+        gs.btnGame1.text = "Начать с начала" //startingPoint
+        gs.btnGame2.text = ""
+        gs.btnGame3.text = ""
+
 
 
         gs.btnGame2.setVisibility(View.INVISIBLE)
