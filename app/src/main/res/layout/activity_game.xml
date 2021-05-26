@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fon_lenta">
 
-    1
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -56,11 +56,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="serif-monospace"
-                        android:text="TextView"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
+                        android:text="Варшава  Ротбарт"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
                         android:adjustViewBounds="true"
                         android:scaleType="centerCrop"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -97,12 +97,12 @@
 
                     <TextView
                         android:id="@+id/btnGame1"
+                        style="@style/ButtonTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="16dp"
 
-                        style="@style/ButtonTextView"
+                        android:layout_marginTop="8dp"
                         android:paddingHorizontal="9dp"
                         android:paddingVertical="9dp"
 
@@ -133,6 +133,7 @@
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold"
+                        android:visibility="gone"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/btnGame1" />
@@ -159,17 +160,16 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/btnGame2" />
 
-                    <Button
+                    <TextView
                         android:id="@+id/btnGame4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="16dp"
                         android:layout_marginTop="24dp"
-                        android:layout_marginEnd="16dp"
-                        android:background="@drawable/button_start"
 
-
+                        style="@style/ButtonTextView"
+                        android:paddingHorizontal="9dp"
+                        android:paddingVertical="9dp"
 
                         android:text="Lfkttt"
                         android:textAllCaps="true"

@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">WarsawRotbart</string>
+    <string name="app_name">Warsaw Rotbart</string>
     <string name="welcome">Welcome</string>
     <string name="click_me">Click Me</string>
     <string name="enter_your_note">Enter your note</string>
     <string name="enter_note_date">Enter note date</string>
     <string name="date_pattern">DD.MM.YYYY</string>
     <string name="confirm">Confirm</string>
-    <string name="button_start">Начать игру</string>
+    <string name="button_start">Start game</string>
 
 </resources>

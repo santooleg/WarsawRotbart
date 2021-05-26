@@ -1139,10 +1139,11 @@ class Story(private val gs: GameActivity) {
         gs.btnGame3.visibility = View.INVISIBLE
     }
 
+    @SuppressLint("SetTextI18n")
     fun infoGame(){
         showAllButton()
 
-        gs.textTitle.text = "Warsaw Rotbart. part I."
+        gs.textTitle.text = "Warsaw Rotbart"
         gs.imgGame.setImageResource(R.drawable.game_info)
         gs.txtGame.setText(R.string.info_game)
         gs.btnGame1.setText("Начать с начала") //startingPoint
